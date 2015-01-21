@@ -1,3 +1,10 @@
+// Program to implement deque and enquee in the existing Queue
+
+
+
+
+package freakster.hack;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
