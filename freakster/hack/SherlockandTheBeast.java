@@ -56,24 +56,56 @@ public class SherlockandTheBeast {
         int testCases = scanner.nextInt();
         for (int i = 0; i < testCases; i++) {
 
-            int decentNumber = getDecentNumber(scanner.nextInt());
-            System.out.println(decentNumber);
+             getDecentNumber(scanner.nextInt());
+            //System.out.println(decentNumber);
         }
 
     }
 
-    private static int getDecentNumber(int number) {
-        if(number/5 == 0){
+    private static void getDecentNumber(int number) {
+            int decentNumber=-1;
+            int five =0, three =0;
+            int first; int second;
 
-        }
-        if (number / 3 == 0) {
+                for (int i = 0; i <number ; i++) {
+                    first = number-i;
+                    second =i;
+                    if (second!=0){
+                        if(first%3==0 && (second%5==0)){
+                          five=first;
+                            three=second;
+                             break;
+                         }
+                    }
+                }
+
+            if(five==0 && three==0){
+                        if (number%3==0 && number!=0){
+                            five=number;
+                            three=0;
+                        }
+                        if (number%5==0 && number!=0){
+                            five=0;
+                            three=number;
+                        }
+                    }
+            if(five==0 && three==0) {
+                System.out.println(-1);
+            }else {
+                for (int i = 0; i <five ; i++) {
+                    System.out.print(5);
+                }
+                for (int i = 0; i < three ; i++) {
+                    System.out.print(3);
+                }
+                System.out.println();
+            }
 
 
-        }
 
 
+            }
 
-        return 0;
-    }
+
 
 }
