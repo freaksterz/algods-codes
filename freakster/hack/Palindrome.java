@@ -32,9 +32,10 @@ public class Palindrome {
     private static String reverseString(String input) {
         StringBuilder reverse = new StringBuilder();
         for (int i = 0; i < input.length() ; i++) {
-            reverse.append(input.charAt(input.length()-1-i));
+            reverse.append(input.charAt(input.length() - 1 - i));
 
         }
+
         return reverse.toString();
     }
 
