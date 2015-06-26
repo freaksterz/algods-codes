@@ -1,7 +1,7 @@
 package freakster.hack;
 
 /**
- * Created by aga2 on 2/9/2015.
+ * Created by freakster on 2/9/2015.
  */
 public class BinaryTreeNode {
 
